@@ -16,6 +16,5 @@ public class InfoController {
         users.add("Kasun");
         users.add("Chamath");
         return users;
-
     }
 }
