@@ -10,10 +10,10 @@ FROM openjdk:17-ea-3-jdk
 WORKDIR /app
 
 # Copy the compiled JAR file into the container
-COPY target/uib-0.0.1-SNAPSHOT.jar uib-0.0.1-SNAPSHOT.jar
+COPY target/demo-0.0.1-SNAPSHOT.jar demo-0.0.1-SNAPSHOT.jar
 
 # Expose the port on which your Spring Boot application listens
 EXPOSE 8080
 
 # Define the command to run your application
-CMD ["java", "-jar", "uib-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "demo-0.0.1-SNAPSHOT.jar"]
