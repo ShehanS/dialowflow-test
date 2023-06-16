@@ -1,6 +1,7 @@
 package com.shehan.dialgoflow.demo;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
@@ -17,4 +18,12 @@ public class InfoController {
         users.add("Chamath");
         return users;
     }
+
+    @PostMapping
+    public Object requestApi(Object request){
+        System.out.println("------------------LOGS-----------------");
+        System.out.println(request);
+        return request;
+    }
+
 }
